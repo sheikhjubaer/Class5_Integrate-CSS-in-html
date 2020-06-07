@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class 5: integrate CSS in html</title>
+	<!-- <base href="https://www.youtube.com/" target="_blank"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <section class="head-section clear">
+        <h1>Integrate CSS in html</h1>
+    </section>
+
+    <section class="menu clear">
+        <ul>
+            <li>
+                <a href="index.html">Homepage</a>
+            </li>
+            <li>
+                <a href="css_power.html">Other Practise</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="table-section">
+        <h2>Table with element tags :</h2>
+    	<table border="1" cellpadding="15" cellspacing="0">
+		<tr>
+			<th width="30%">Serial no.</th>
+			<th width="20%">Tag</th>
+			<th width="20%">Description</th>
+			<th width="40%">Action</th>
+			<th>Example</th>
+		</tr>
+		<tr>
+			<td align="center">01</td>
+			<td><xmp><abbr></xmp></td>
+			<td><p>Defines an abbreviation or an acronym</p></td>
+			<td><p>Hover over ICC to see result.</p></td>
+			<td><p title="International Cricket Council">The ICC is the world governing body of cricket.</p></td>
+		</tr>
+		<tr>
+			<td align="center">02</td>
+			<td><xmp><address></xmp></td>
+			<td><p>Defines contact information for the author/owner of a document</p></td>
+			<td>Adress are showing in italic form.</td>
+			<td>
+			    <address>
+					1600<br>
+					Amphitheatre Parkway<br>
+					Mountain View, CA 94043
+			    </address>
+			</td>
+		</tr>
+        <tr>
+        	<td align="center">03</td>
+        	<td><xmp><area></xmp></td>
+        	<td><p>Defines an area inside an image-map</p></td>
+        	<td><p>Click on coffee cup to see action. In this case, this click will take you to YouTube. So area can work as a link.</p></td>
+        	<td align="center">
+        		<img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg" alt="close-up-of-coffee-cup-on-table" style="width: 150px;" usemap="#coffee"/>
+        		<map name="coffee">
+        			<area shape="ract" coords="14, 92, 143, 211" href="https://www.youtube.com/">
+        		</map>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">04</td>
+        	<td><xmp><article></xmp></td>
+        	<td><p>Defines an article</p></td>
+        	<td><p>This tag specifies independent, self-contained content.</p></td>
+        	<td>
+        		<h2>Article :</h2>
+        		<article>
+        			<h3>Google Chrome</h3>
+        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        		</article>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">05</td>
+        	<td><xmp><aside></xmp></td>
+        	<td><p>	Defines content aside from the page content</p></td>
+        	<td><p>This tag defines some content aside from the content it is placed in. The aside content should be indirectly related to the surrounding content. This content is often placed as a sidebar in a document.</p></td>
+        	<td>
+        		<h2>Aside :</h2>
+        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        		<aside>
+        			<h3>Aside elements :</h3>
+        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        		</aside>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">06</td>
+        	<td><xmp><audio></xmp></td>
+        	<td><p>Defines embedded sound content</p></td>
+        	<td><p>Click on the play button to play a sound:</p></td>
+        	<td>
+        		<h2>The audio :</h2>
+        		<audio controls>
+        			<source src="audio/audio.mp3" type="audio/mp3">
+        		</audio>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">07</td>
+        	<td><xmp><base></xmp></td>
+        	<td><p>Specifies the base URL/target for all relative URLs in a document</p></td>
+        	<td><p>As the base is defined at the head portion with target="blank_" attribute and also with URL, the link address will open in new tab though the target="blank_" attribute is not defined here.</p></td>
+        	<td>
+        		<h2>Base tag:</h2>
+        		<p><a href="watch?v=kbvvxIWjx6s">HTML base tag</a> - Notice that the link opens in a new window, even if it has no target="_blank" attribute. This is because the target attribute of the base element is set to "_blank".</p>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">08</td>
+        	<td><xmp><bdi></xmp></td>
+        	<td><p>Isolates a part of text that might be formatted in a different direction from other text outside it</p></td>
+        	<td><p>The bdi algorithm have put the colon and number next to the Arabic word like other English users.</p></td>
+        	<td>
+        		<h2>The bdi element :</h2>
+                <p>In the example below, usernames are shown along with the number of points in a contest. If the bdi element is not supported in the browser, the username of the Arabic user would confuse the text (the bidirectional algorithm would put the colon and the number "90" next to the word "User" rather than next to the word "points").</p>
+                <ul>
+                	<li>User <bdi>Jack</bdi>: 60 point</li>
+                	<li>User <bdi>Max</bdi>: 80 point</li>
+                	<li>User <bdi>إيان</bdi>: 30 point</li>
+                </ul>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">09</td>
+        	<td><xmp><bdo></xmp></td>
+        	<td><p>Overrides the current text direction</p></td>
+        	<td><p>In bdo we have use dir attribute to change the text viewing direction.</p></td>
+        	<td>
+        		<h1>The bdo (Bi-Directional Override) element</h1>
+                <p><b>This paragraph will go left-to-right.</b></p>  
+                <p><bdo dir="rtl">This paragraph will go right-to-left.</bdo></p>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">10</td>
+        	<td><xmp><blockquote></xmp></td>
+        	<td><p>	Defines a section that is quoted from another source</p></td>
+        	<td><p>This tag is used to specify a section that is quoted from another source.</p></td>
+        	<td>
+        		<h2>Blockquote element:</h2>
+        		<blockquote cite="https://www.lipsum.com/">
+        			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        		</blockquote>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">11</td>
+        	<td><xmp><caption></xmp></td>
+        	<td><p>Defines a table caption</p></td>
+        	<td><p>It is basically written at the top of the table to define what the table is about.</p></td>
+        	<td align="center">
+        		<div class="caption-section">
+        			<table border="1" cellpadding="10" style="text-align: center;">
+        			<caption>Caption : Monthly Savings:</caption>
+        			<tr>
+        				<th>Month</th>
+        				<th>Savings ($)</th>
+        			</tr>
+        			<tr>
+        				<td>January</td>
+        				<td>1000$</td>
+        			</tr>
+        			<tr>
+        				<td>February</td>
+        				<td>100$</td>
+        			</tr>
+        		</table>
+        		</div>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">12</td>
+        	<td><xmp><cite></xmp></td>
+        	<td><p>Defines the title of a work</p></td>
+        	<td><p>Here the picture title is given is cite attribute. This tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).</p></td>
+        	<td align="center">
+        		<h2>Cite Element :</h2>
+        		<img src="https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg" width="150">
+        		<p><cite>Eiffel Tower</cite> by Edward Munch. Painted in 1893.</p>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">13</td>
+        	<td><xmp><code></xmp></td>
+        	<td><p>Defines a piece of computer code</p></td>
+        	<td><p>This tag is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.</p></td>
+        	<td>
+        		<h2>The code element</h2>
+
+                <p>The HTML <code>button</code> tag defines a clickable button.</p>
+
+                <p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">14</td>
+        	<td><xmp><col></xmp></td>
+        	<td><p>Specifies column properties for each column within a <xmp><colgroup></xmp> element </p></td>
+        	<td><p><p>We have use col in colgroup. The col tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.</p></p></td>
+        	<td>
+        		<h2>The col element :</h2>
+        		<div class="col-section">
+        			<table border="1" cellpadding="10" style="text-align: center;" align="center">
+        			<colgroup>
+        				<col span="2"  style="background-color: yellow;">
+        				<col  style="background-color: red;">
+        			</colgroup>
+        			<caption>Caption : Monthly Savings:</caption>
+	        			<tr>
+	        				<th>Month</th>
+	        				<th>Savings ($)</th>
+	        				<th>Total</th>
+	        			</tr>
+	        			<tr>
+	        				<td>January</td>
+	        				<td>1000$</td>
+	        				<td>1100$</td>
+	        			</tr>
+	        			<tr>
+	        				<td>February</td>
+	        				<td>100$</td>
+	        				<td>1100$</td>
+	        			</tr>
+        		</table>
+        		</div>
+        	</td>
+        </tr>
+
+        <tr>
+        	<td align="center">15</td>
+        	<td><xmp><colgroup></xmp></td>
+        	<td><p>	Specifies a group of one or more columns in a table for formatting</p></td>
+        	<td><p>The colgroup tag specifies a group of one or more columns in a table for formatting. The colgroup tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.</p></td>
+        	<td>
+        		<table border="1" cellpadding="10" style="text-align: center;" align="center">
+        			<colgroup>
+        				<col span="2"  style="background-color: yellow;">
+        				<col  style="background-color: red;">
+        			</colgroup>
+        			<caption>Caption : Monthly Savings:</caption>
+	        			<tr>
+	        				<th>Month</th>
+	        				<th>Savings ($)</th>
+	        				<th>Total</th>
+	        			</tr>
+	        			<tr>
+	        				<td>January</td>
+	        				<td>1000$</td>
+	        				<td>1100$</td>
+	        			</tr>
+	        			<tr>
+	        				<td>February</td>
+	        				<td>100$</td>
+	        				<td>1100$</td>
+	        			</tr>
+        		</table>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">16</td>
+        	<td><xmp><data></xmp></td>
+        	<td><p>	Adds a machine-readable translation of a given content</p></td>
+        	<td><p>We have used a data tag which is used to add a machine-readable translation of a given content. This element provides both a machine-readable value for data processors, and a human-readable value for rendering in a browser.</p></td>
+        	<td>
+        		<h2>The data element :</h2>
+        		<p>Here in this unordered list we have corresponding value for each item.</p>
+        		<ul>
+        			<li>Orange</li>
+        			<li>Grapes</li>
+        			<li>Banana</li>
+        		</ul>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">17</td>
+        	<td><xmp><datalist></xmp></td>
+        	<td><p>Specifies a list of pre-defined options for input controls</p></td>
+        	<td><p>The datalist tag specifies a list of pre-defined options for an input element. The datalist tag is used to provide an "autocomplete" feature for input elements. Users will see a drop-down list of pre-defined options as they input data.</p></td>
+        	<td valign="top">
+        		<h2>The datalist element :</h2>
+        		<label>Enter service you want:</label>
+        		<input type="text" list="browsers" style="margin-bottom: 20px;">
+        		<datalist id="browsers">
+        			<option>Web design</option>
+        			<option>Web development</option>
+        			<option>SEO & Marketing</option>
+        			<option>Database</option>
+        		</datalist>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">18</td>
+        	<td><xmp><dd></xmp></td>
+        	<td><p>	Defines a description/value of a term in a description list</p></td>
+        	<td><p>The dd tag is used to describe a term/name in a description list.
+
+            The dd tag is used in conjunction with dl (defines a description list) and dt (defines terms/names).
+
+            Inside a dd tag you can put paragraphs, line breaks, images, links, lists, etc.</p></td>
+        	<td>
+        		<h2>The dl, dd, and dt elements :</h2>
+        		<p>These three elements are used to create a description list:</p>
+
+        		<dl>
+        			<dt>Coffee:</dt>
+        			<dd>Made with coffee beans & milk.</dd>
+        			<dt>Juice:</dt>
+        			<dd>It can be make from variours fruits.</dd>
+        		</dl>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">19</td>
+        	<td><xmp><del></xmp></td>
+        	<td><p>Defines text that has been deleted from a document</p></td>
+        	<td><p>The del tag defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.</p></td>
+        	<td>
+        		<h2>The del element :</h2>
+        		<p>I love <del>Winters</del> summers.</p>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">20</td>
+        	<td><xmp><details></xmp></td>
+        	<td><p>	Defines additional details that the user can view or hide</p></td>
+        	<td><p>The details tag specifies additional details that the user can open and close on demand. Any sort of content can be put inside the details tag.
+        	<b>Click Lorem Ipsum to view content.</b> </p></td>
+        	<td>
+        		<h2>The details element</h2>
+        		<details>
+        			<summary>Lorem Ipsum :</summary>
+        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        		</details>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">21</td>
+        	<td><xmp><dfn></xmp></td>
+        	<td><p>Specifies a term that is going to be defined within the content</p></td>
+        	<td><p>The dfn tag stands for the "definition element", and it specifies a term that is going to be defined within the content.</p></td>
+        	<td><p><dfn title="Hyper text markup language">HTML</dfn> is use for mark up of an website.</p></td>
+        </tr>
+        <tr>
+        	<td align="center">22</td>
+        	<td><xmp><div></xmp></td>
+        	<td><p>	Defines a section in a document</p></td>
+        	<td><p>The div tag defines a division or a section in an HTML document.</p></td>
+        	<td>
+        		<div class="mydiv">
+        			<h2>The div tag:</h2>
+        			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        		</div>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">23</td>
+        	<td><xmp><dl></xmp></td>
+        	<td><p>Defines a description list</p></td>
+        	<td><p>The dl tag defines a description list.
+            The dl tag is used in conjunction with dt (defines terms/names) and dd (describes each term/name).</p></td>
+        	<td>
+        		<h2>The dl element:</h2>
+        		<dl>
+        			<dt>Coffee:</dt>
+        			<dd>Made from coffee beans and milk.</dd>
+        			<dt>Milk:</dt>
+        			<dd>White liquid.</dd>
+        		</dl>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">24</td>
+        	<td><xmp><dt></xmp></td>
+        	<td><p>Defines a term/name in a description list</p></td>
+        	<td><p>The dt tag defines a term/name in a description list.
+            The dt tag is used in conjunction with dl (defines a description list) and dd (describes each term/name).</p></td>
+            <td>
+            	<h2>The dt element:</h2>
+        		<dl>
+        			<dt>Coffee:</dt>
+        			<dd>Made from coffee beans and milk.</dd>
+        			<dt>Milk:</dt>
+        			<dd>White liquid.</dd>
+        		</dl>
+            </td>
+        </tr>
+        <tr>
+        	<td align="center">25</td>
+        	<td><xmp><em></xmp></td>
+        	<td><p>Defines emphasized text </p></td>
+        	<td><p>The em tag is used to define emphasized text. The content inside is typically displayed in italic.
+            A screen reader will pronounce the words in em with an emphasis, using verbal stress.</p></td>
+        	<td>
+        		<h2>The em element:</h2>
+        		<p>You <em>have</em> to hurry up!</p>
+                <p>We <em>cannot</em> live like this.</p>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">26</td>
+        	<td><xmp><embed></xmp></td>
+        	<td><p>Defines a container for an external application</p></td>
+        	<td><p>The embed tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application.</p></td>
+        	<td>
+        		<h2>The embed element:</h2>
+        		<embed type="image/jpg" src="images/afterglow-backlit-beautiful-crescent-moon-556661.jpg" width="150"></embed>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">27</td>
+        	<td><xmp><fieldset></xmp></td>
+        	<td><p>Groups related elements in a form</p></td>
+        	<td><p>The fieldset tag is used to group related elements in a form. The fieldset tag draws a box around the related elements.</p></td>
+        	<td>
+        		<fieldset>
+        			<legend style="margin-bottom: 10px;">Registration :</legend>
+        			<label>Username :</label>
+        			<input type="text"><br>
+        			<label >Name :</label>
+        			<input type="text" style="margin-left: 35px;"><br>
+        			<label>Email :</label>
+        			<input type="Email" style="margin-left: 35px;"><br>
+        			<label>Password :</label>
+        			<input type="Password" style="margin-left: 3px;"><br>
+        			<button type="submit" style="margin-top: 10px; margin-left: 98px; padding: 5px 30px;">Submit</button>
+        		</fieldset>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">28</td>
+        	<td><xmp><figcaption></xmp></td>
+        	<td><p>Defines a caption for a figure element</p></td>
+        	<td>
+        		<p>The figcaption tag defines a caption for a figure element.
+                The figcaption element can be placed as the first or last child of the figure element.</p>
+        	</td>
+        	<td>
+        		<h1>The figcaption element :</h1>
+        		<figure>
+        			<img src="images/afterglow-backlit-beautiful-crescent-moon-556661.jpg" alt="boy" width="150">
+        			<figcaption>Fig.1 - Boy playing with stars.</figcaption>
+        		</figure>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">29</td>
+        	<td><xmp><figure></xmp></td>
+        	<td><p>Specifies self-contained content</p></td>
+        	<td>The figure tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</td>
+        	<td>
+        		<h1>The figure element :</h1>
+        		<figure>
+        			<img src="images/afterglow-backlit-beautiful-crescent-moon-556661.jpg" alt="boy" width="150">
+        			<figcaption>Fig.1 - Boy playing with stars.</figcaption>
+        		</figure>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">30</td>
+        	<td><xmp><footer></xmp></td>
+        	<td></td>
+        	<td><p>The footer tag defines a footer for a document or section.
+            A footer element typically contains:<br>
+            1.authorship information<br>
+			2.copyright information<br>
+			3.contact information<br>
+			4.sitemap<br>
+			5.back to top links<br>
+			6.related documents<br>
+			</p></td>
+        	<td>
+        		<h2>The footer element:</h2>
+
+        		<footer>
+	        		<p>Author: Hege Refsnes<br>
+	                <a href="mailto:hege@example.com">hege@example.com</a></p>
+        		</footer>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">31</td>
+        	<td><xmp><form></xmp></td>
+        	<td><p>Defines an HTML form for user input</p></td>
+        	<td><p>The form tag is used to create an HTML form for user input.</p></td>
+        	<td>
+        		<h2>The form element :</h2>
+        		<form>
+        			<legend style="margin-bottom: 10px;">Registration :</legend>
+        			<label>Username :</label>
+        			<input type="text"><br>
+        			<label >Name :</label>
+        			<input type="text" style="margin-left: 35px;"><br>
+        			<label>Email :</label>
+        			<input type="Email" style="margin-left: 35px;"><br>
+        			<label>Password :</label>
+        			<input type="Password" style="margin-left: 3px;"><br>
+        			<button type="submit" style="margin-top: 10px; margin-left: 98px; padding: 5px 30px;">Submit</button>
+        		</form>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">32</td>
+        	<td><xmp><i></xmp></td>
+        	<td><p>Defines a part of text in an alternate voice or mood</p></td>
+        	<td><p>The i tag defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
+            The i tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.</p></td>
+        	<td>
+        		<h2>The i element :</h2>
+                <p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
+
+                <p>The <i>RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">33</td>
+        	<td><xmp><iframe></xmp></td>
+        	<td><p>Defines an inline frame</p></td>
+        	<td><p>The iframe tag specifies an inline frame.
+            An inline frame is used to embed another document within the current HTML document.</p></td>
+        	<td>
+        		<h2>The iframe element :</h2>
+        		<iframe width="100%" height="315" src="https://www.youtube.com/embed/gEhzMmlahUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Expidia: Tourism channel."></iframe>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">34</td>
+        	<td><xmp><ins></xmp></td>
+        	<td><p>Defines a text that has been inserted into a document</p></td>
+        	<td><p>The ins tag defines a text that has been inserted into a document. Browsers will usually underline inserted text.</p></td>
+        	<td>
+        		<h2>The ins element :</h2>
+        		<p>My favourite colour is <del>Blue</del> <ins>Red</ins>.</p>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">35</td>
+        	<td><xmp><kbd></xmp></td>
+        	<td><p>	Defines keyboard input</p></td>
+        	<td><p>The kbd tag is used to define keyboard input. The content inside is displayed in the browser's default monospace font.</p></td>
+        	<td>
+        		<h2>The kbd element :</h2>
+        		<p>Press <kbd>ctrl c</kbd> to copy text.</p>
+        		<p>And press <kbd>ctrl v</kbd> to paste it.</p>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">36</td>
+        	<td><xmp><legend></xmp></td>
+        	<td><p>	Defines a caption for a fieldset element</p></td>
+        	<td>The legend tag defines a caption for the fieldset element.</td>
+        	<td>
+        		<form>
+        			<legend style="margin-bottom: 10px;">Registration :</legend>
+        			<label>Username :</label>
+        			<input type="text"><br>
+        			<label >Name :</label>
+        			<input type="text" style="margin-left: 35px;"><br>
+        			<label>Email :</label>
+        			<input type="Email" style="margin-left: 35px;"><br>
+        			<label>Password :</label>
+        			<input type="Password" style="margin-left: 3px;"><br>
+        			<button type="submit" style="margin-top: 10px; margin-left: 98px; padding: 5px 30px;">Submit</button>
+        		</form>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">37</td>
+        	<td><xmp><map></xmp></td>
+        	<td><p>Defines an image-map</p></td>
+        	<td><p>The map tag is used to define an image-map. An image-map is an image with clickable areas.</p></td>
+        	<td>
+        		<h2>The map element :</h2>
+        		<img src="images/close-up-photography-of-cup-of-coffee-851555.jpg" alt="close-up-photography-of-cup-of-coffee" width="300" usemap="#coffee1">
+        		<map name="coffee1">
+        			<area shape="ract" coords="150, 60, 286, 165" href="https://www.youtube.com/">
+        		</map>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">38</td>
+        	<td><xmp><mark></xmp></td>
+        	<td><p>	Defines marked/highlighted text</p></td>
+        	<td><p>The mark tag defines text that should be marked or highlighted.</p></td>
+        	<td>
+        		<h2>The mark element :</h2>
+                <p>Do not forget to buy <mark>milk</mark> today.</p>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">39</td>
+        	<td><xmp><meter></xmp></td>
+        	<td><p>Defines a scalar measurement within a known range (a gauge)</p></td>
+        	<td><p>The meter tag defines a scalar measurement within a known range, or a fractional value. This is also known as a gauge.</p></td>
+        	<td>
+        		<h2>The meter element :</h2>
+
+				<p>The meter element is used to display a gauge:</p>
+
+				<label for="disk_c">Disk usage C:</label>
+				<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+
+				<label for="disk_d">Disk usage D:</label>
+				<meter id="disk_d" value="0.6">60%</meter>
+
+				<p><strong>Note:</strong> The meter tag is not supported in Edge 12 (or earlier).</p>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">40</td>
+        	<td><xmp><nav></xmp></td>
+        	<td><p>Defines navigation links</p></td>
+        	<td><p>The nav tag defines a set of navigation links.</p></td>
+        	<td>
+        		<a href="#">html5</a> |
+        		<a href="#">CSS3</a> |
+        		<a href="#">JavaScript</a> |
+        		<a href="#">JQuery</a> |
+        		<a href="#">Bootstrap</a> |
+        		<a href="#">Php</a> |
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">41</td>
+        	<td><xmp><noscript></xmp></td>
+        	<td><p>Defines an alternate content for users that do not support client-side scripts</p></td>
+        	<td>
+        		<p>The noscript tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support script.</p>
+
+        	    <p>The noscript element can be used in both head and body. When used inside head, the noscript element could only contain link, style, and meta elements.</p>
+
+        	    <p>A browser with JavaScript disabled will show the text inside the noscript element ("Hello World!" will not be displayed).</p>
+        	</td>
+        	<td>
+        		<h2>The noscript element :</h2>
+        		<script type="text/javascript">
+        			document.write("Hello World!")
+        		</script>
+
+        		<noscript>Sorry! Your browser doesn't support noscript file.</noscript>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">42</td>
+        	<td><xmp><object></xmp></td>
+        	<td><p>	Defines a container for an external application</p></td>
+        	<td>
+        		<p>The object tag defines a container for an external resource.</p>
+                <p>The external resource can be a web page, a picture, a media player, or a plug-in application.</p>
+            </td>
+        	<td>
+        		<h2>The object element :</h2>
+        		<object data="images/seaside-994605.jpg" width="300"></object>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">43</td>
+        	<td><xmp><optgroup></xmp></td>
+        	<td><p>Defines a group of related options in a drop-down list</p></td>
+        	<td>
+        		<p>The optgroup tag is used to group related options in a select element (drop-down list).<p>
+
+                <p>If you have a long list of options, groups of related options are easier to handle for a user.</p>
+                <p>The optgroup tag is used to group related options in a drop-down list:</p>
+            </td>
+        	<td>
+        		<h2>The optgroup element</h2>
+                
+                <form>
+                	<label>Choose a car :</label>
+                	<select>
+                		<optgroup label="Swidish Car">
+                			<option>Audi</option>
+                			<option>Mercedes</option>
+                			<option>Ferrari</option>
+                		</optgroup>
+                		<optgroup label="German Car">
+                			<option>Audi</option>
+                			<option>Mercedes</option>
+                			<option>Ferrari</option>
+                		</optgroup>
+                	</select><br>
+                	<button type="submit" style="margin-top:15px; padding: 3px 15px; margin-left: 95px;">Submit</button>
+                </form>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">44</td>
+        	<td><xmp><output></xmp></td>
+        	<td><p>	Defines the result of a calculation</p></td>
+        	<td>
+        		<p>output tag is used to represent the result of a calculation (like one performed by a script).</p>
+        	</td>
+        	<td>
+        		<h2>The output element :</h2>
+        		<form oninput = "x.value = parseInt(a.value) + parseInt(b.value)">
+        			<input type="range" id="a" value="50">
+        			+ <input type="number" id="b" value="25">
+        			= <output name="x" for="a b"></output>
+        		</form>
+        		<p><strong>Note:</strong> The output element is not supported in Edge 12 (or earlier).</p>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">45</td>
+        	<td><xmp><param></xmp></td>
+        	<td><p>Defines a parameter for an object</p></td>
+        	<td>
+        		<p>The param tag is used to define parameters for an object element.</p>
+        		<p>Here we set the "autoplay" parameter to "true", so the sound will start playing as soon as the page loads:</p>
+        	</td>
+        	<td>
+        		<h2>The param element :</h2>
+        		<object data="audio/A Breathtaking Piano Piece - Jervy Hou.mp3" controls="0">
+        		<param name="autoplay" value="true">
+        		</object>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">46</td>
+        	<td><xmp><picture></xmp></td>
+        	<td><p>	Defines a container for multiple image resources</p></td>
+        	<td><p>Resize the browser window to load different images.</p></td>
+        	<td>
+        		<h2>The picture element:</h2>
+        		<picture>
+        			<!-- This pic will appear 1st (large 800 to 1200) -->
+        			<source media="(min-width:800px)" srcset="images/lake-with-mountain-view-2440021.jpg">
+
+        			<!-- This pic will appear 2nd (medium 650 to 799) -->
+        			<source media="(min-width:650px)" srcset="images/photo-of-person-walking-on-deserted-island-934718.jpg">
+        			
+        			<!-- This pic will appear 3rd (small screen) -->
+        			<img src="images/lake-on-between-snowy-mountain-858115.jpg" alt="Lake" style="width: auto;">
+        		</picture>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">47</td>
+        	<td><xmp><pre></xmp></td>
+        	<td><p>Defines preformatted text</p></td>
+        	<td>
+        		<p>The pre tag defines preformatted text.
+                Text in a pre element is displayed in a fixed-width font, and the text preserves both spaces and line breaks. The text will be displayed exactly as written in the HTML source code.</p>
+            </td>
+        	<td>
+        		<h2>The pre element :</h2>
+        		<pre>Text in a pre element 
+        		is displayed in a fixed-width
+        		font, and it preserves both 
+        	    spaces and      line breaks</pre>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">48</td>
+        	<td><xmp><progress></xmp></td>
+        	<td><p>Represents the progress of a task</p></td>
+        	<td><p>The progress tag represents the completion progress of a task.</p></td>
+        	<td>
+        		<h2>The progress element :</h2>
+        		<label for="file">Loading!</label>
+        		<progress id="file" value="32" max="100">
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">49</td>
+        	<td><xmp><q></xmp></td>
+        	<td><p>Defines a short quotation</p></td>
+        	<td><p>The q tag defines a short quotation.Browsers normally insert quotation marks around the quotation.</p></td>
+        	<td>
+        		<h2>The q element :</h2>
+        		<p>Motivation : <q>Satisfy our customers.</q>
+        		</p>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">50</td>
+        	<td><xmp><svg></xmp></td>
+        	<td><p>	Defines a container for SVG graphics</p></td>
+        	<td><p>The svg tag defines a container for SVG graphics. SVG has several methods for drawing paths, boxes, circles, text, and graphic images.</p></td>
+        	<td>
+        		<h2>The svg element :</h2>
+        		<svg width="100" height="100">
+        			<circle cx="50" cy="50" r="40" stroke="red" stroke-width="4" fill="blue">
+        		</svg>
+        	</td>
+        </tr>
+        <tr>
+        	<td align="center">51</td>
+        	<td><xmp><video></xmp></td>
+        	<td><p>Defines embedded video content</p></td>
+        	<td><p>The video tag is used to embed video content in a document, such as a movie clip or other video streams.</p></td>
+        	<td>
+        		<h2>The video tag :</h2>
+        		<video width="100%" height="300" controls>
+        			<source src="video/Northern Lights - Norway 8k HDR.mp4" type="video/mp4">
+        			Your browser does not support the video tag.
+        		</video>
+        	</td>
+        </tr>
+
+    </table>
+    </section>
+
+    <footer>
+        <p>&copy;Copyright : Created by Sheikh mohammad Jubaer.</p>
+        <p>Created in 2020.</p>
+    </footer>
+</body>
+</html>
