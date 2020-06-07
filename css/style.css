@@ -1,0 +1,172 @@
+/** {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}*/
+body {
+	font-family: Verdana;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+p {
+    line-height: 1.7;
+    font-size: 15px;
+}
+.clear {
+	overflow: hidden;
+}
+
+.head-section {
+	background: #2F2D2E;
+	color: #fff;
+	height: 100px;
+	text-align: center;
+}
+.head-section h1 {
+    padding-top: 30px;
+}
+
+
+.menu {
+	background: #9B999A;
+}
+.menu ul {
+}
+.menu ul li {
+    float: left;
+    text-decoration: none;
+    display: block;
+}
+.menu ul li a {
+    text-decoration: none;
+    display: block;
+    background: #DFDFDF;
+    margin-left: 0px;
+    color: #333;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid;
+    margin-top: -10px;
+    margin-bottom: 8px;
+    margin-right: 15px;
+}
+.menu ul li a:hover {
+	background: #333333;
+	color: #fff;
+	border: 0 solid;
+}
+
+.table-section {
+	margin-bottom: 80px;
+	margin-top: 80px;
+}
+.table-section h2 {
+    margin-left: 40px;
+}
+.table-section table {}
+.table-section table tr th {
+    color: #fff;
+    background: #444444;
+    padding: 20px 12px;
+    font-size: 20px;
+    width: 400px;
+}
+.table-section table tr td {
+    height: 56px;
+}
+.table-section table tr td xmp {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+.table-section table tr {}
+
+.caption-section {}
+.caption-section caption {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.caption-section table {}
+.caption-section table tr th {
+    padding: 12px 4px;
+    width: 160px;
+}
+.caption-section table tr td {}
+
+
+.mydiv {
+	background: yellow;
+}
+.mydiv h2 {
+	background: red;
+	padding: 10px;
+	margin-left: 0;
+}
+.mydiv p {
+	background: orange;
+	padding: 10px;
+	margin-top: -20px;
+}
+input {
+	margin-bottom: 10px;
+}
+footer {
+	background: #838383;
+	color: #fff;
+	text-align: center;
+	padding: 8px;
+}
+footer a {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+
+/*css_power.html CSS Starts here*/
+.content {
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/banner-bg.png);
+	height: 850px;
+	background-size: cover;
+	background-position: center bottom;
+	text-align: center;
+}
+.content h1 {
+    color: #fff;
+    margin-top: -2px;
+    font-size: 40px;
+    padding: 270px 16% 5px 16%;
+}
+.content .btn {
+    float: left;
+    width: 179px;
+    margin-left: 485px;
+}
+.content .btn a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    background: #FB414E;
+    padding: 10px 50px;
+}
+.content .btn a:hover {
+	background: red;
+}
+.content .btn1 {
+	float: right;
+	width: 179px;
+	margin-right: 485px;
+}
+.content .btn1 a {
+	text-decoration: none;
+    display: block;
+    color: #fff;
+    background: rgba(0, 0, 0, 0);
+    padding: 10px 50px;
+    border: 1px solid #FB414E;
+}
+.content .btn1 a:hover {
+	background: #FB414E;
+}
+/*css_power.html CSS Ends here*/
